@@ -33,6 +33,13 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Docker compose connection
+        uses: actions/checkout@v4
+        with: 
+          compose-file: "./docker-compose.yml" 
+        env:
+          CUSTOM_VARIABLE: "test"
+
       # Runs a single command using the runners shell
       - name: Run tests
         run: pytest
