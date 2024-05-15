@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Click battle</title>
+</head>
+<body>
+<div class="content">
+    <div class="left_element">
+        <form action="/score_left" method="post">
+            <p>Left</p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div class="score">
+        <p>{{left_score}}:{{right_score}}</p>
+    </div>
+    <div class="right_element">
+        <form action="/score_right" method="post">
+            <p>Right</p>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</div>
+</body>
+</html>

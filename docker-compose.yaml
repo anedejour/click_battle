@@ -1,0 +1,8 @@
+version: '3.1'
+services:
+  db:
+    image: bitnami/redis
+    environment:
+      - ALLOW_EMPTY_PASSWORD=true
+    ports:
+      - 6379:6379
