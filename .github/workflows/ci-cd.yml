@@ -34,7 +34,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Docker compose connection
-        uses: anedejour/compose-action@v1.5.1
+        uses: hoverkraft-tech/compose-action@v1.5.1
         with: 
           compose-file: "./docker-compose.yaml"
         env:
