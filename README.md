@@ -27,7 +27,9 @@ CI e CD:**
   Os testes de integração são 3:
 
       - test_main_page -> Irá acesar o index, e fazer o teste de que dentro do html, tem a string ("<p>0:0</p>").
-      - test_click_left -> Ele também irá  acesar o index, e fazer o teste de que dentro do html, tem a string "<p>0:0</p>". Logo após, irá fazer um post, para clicar no botão "click_left", que vai incrementar +1. Dessa forma, a verificação que o teste terá que fazer, é que a string (<p>1:0</p>) está contida no html.
+      - test_click_left -> Ele também irá  acesar o index, e fazer o teste de que dentro do html, tem a string "<p>0:0</p>". 
+          Logo após, irá fazer um post, para clicar no botão "click_left", que vai incrementar +1. 
+          Dessa forma, a verificação que o teste terá que fazer, é que a string (<p>1:0</p>) está contida no html.
       - test_click_right -> Vai realizar os mesmos testes que o test_click_right, porém para o botão direito. 
 
 **Como a pipeline CI/CD funciona: **
